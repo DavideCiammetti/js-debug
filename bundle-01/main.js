@@ -22,14 +22,13 @@ altrimente il ciclo non si sarebbe mai dal momento che i = 0  e 5 è maggiore
 */
 
 // ---------------------------------------------ESERCIZIO 2------------------------------------------------------------------
-function addIfEven(num) {
-    if (num % 2 === 0) {
-        return num + 5;
-    }
-    return num;
+// function addIfEven(num) {
+//     if (num % 2 === 0) {
+//         return num + 5;
+//     }
+//     return num;
     
-}
-addIfEven(7);
+// }
 /*
 in questo secondo esercizio viene creata una funzione addIfEven() alla quale viene passato un valore "num",  ed al suo interno invece con una condizione if() 
 chiediamo di dividere il numero per 2 e SE il resto (grazie all'operatore modulo %) è 0 allora facciamo return di num + 5.
@@ -39,14 +38,19 @@ quindi scriviamo num % 2 === 0.
 */
 
 // ----------------------------------------------ESERCIZIO 3-----------------------------------------------------------------
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
-//     }
-// }
+function loopToFive() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
+loopToFive();
+/*
+in questo terzo esercizio abbiamo una funzione loopToFive() con al suo interno un ciclo for() che dovrebbe mostrare a console il valore di "i" ad
+ogni ciclo, qua il problema sta nella scrittura della condizione "let i = 0, i < 5, i++"---> in questo caso le virgole devono essere punti e virgola
+*/
 
 
-// // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
+// //--------------------------------------------------------ESERCIZIO 4 --------------------(suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
 //     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 //     let evenNumbers = [];
