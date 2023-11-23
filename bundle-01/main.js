@@ -11,12 +11,14 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
 /*
-
+in questo primo esercizio abbiamo un ciclo for() con un index "i" ed al suo interno un console.log() per stampare il valore dell'index ad ogni ciclo
+il problema di questo ciclo però è il simbolo di maggiore questo perche i è inizialemnte minore di 5 quindi dobbiamo correggerlo con i < 5 
+altrimente il ciclo non si sarebbe mai dal momento che i = 0  e 5 è maggiore 
 */
 
 // ---------------------------------------------ESERCIZIO 2------------------------------------------------------------------
