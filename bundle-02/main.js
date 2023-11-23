@@ -52,13 +52,19 @@
 */
 
 // // ---------------------------------------------------ESERCIZIO 3--------------------------------------------
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers(userNumber) {
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+const userNumber = Number(prompt('Inserisci un numero'));
+addNumbers(userNumber);
+
+/*
+prende la funzione addNumbers()---> e la usa per far inserire un numero all'utente e sommarci 12 ma in questo modo ci sono diversi errori :
+1- il prmpt da stringhe e non numeri qundi dobbiamo conertire la stringa in nuero
+2- inserisco il promt come parametro da dare alla funzione per renderla più versatile
+*/
 
 
 // // ----------------------------------------------------ESERCIZIO 4-------------------------------------------
