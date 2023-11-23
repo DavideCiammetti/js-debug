@@ -52,13 +52,13 @@
 */
 
 // // ---------------------------------------------------ESERCIZIO 3--------------------------------------------
-function addNumbers(userNumber) {
-    const total = userNumber + 12;
+// function addNumbers(userNumber) {
+//     const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
-}
-const userNumber = Number(prompt('Inserisci un numero'));
-addNumbers(userNumber);
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// const userNumber = Number(prompt('Inserisci un numero'));
+// addNumbers(userNumber);
 
 /*
 prende la funzione addNumbers()---> e la usa per far inserire un numero all'utente e sommarci 12 ma in questo modo ci sono diversi errori :
@@ -68,23 +68,33 @@ prende la funzione addNumbers()---> e la usa per far inserire un numero all'uten
 
 
 // // ----------------------------------------------------ESERCIZIO 4-------------------------------------------
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess(userEmail) {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
-//     let grantAccess = 'false';
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+        if (grantAccess === true) {
+            console.log('Accesso consentito!');
+        } 
+    }else {
+        console.log('Accesso negato!');
+    }
+
+}
+const userEmail = prompt('Inserisci il tuo indirizzo email');
+checkAccess(userEmail);
+
+/*
+    questa funzione checkAccess()----> prende un array[] di email e ha il compito di vedere se l'email inserita dall'utente è nel registro mail
+    quindi in questo caso inserirei la userEmail come parametro da dare alla funzione e l'array[]di mail lo lascio dentro perche fa parte della funzione 
+    essendo l'argomento validatore 
+    pero c'è anche un altro problema e cioè che l'if che converte il valore grantAccess da false a true non è incluso con gli altri if e essendo lo scope
+    interno all'if allora sara sempre negativo il risultato.
+    in fine tolgo true e false dagli apici sono boolean value non string e inserisco else in fondo all'if principale
+*/
 
 
 // // -------------------------------------------------ESERCIZIO 5 (suggerimento: c'è un solo errore)-----------------------------------
